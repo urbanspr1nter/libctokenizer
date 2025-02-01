@@ -1,0 +1,3 @@
+[submodule "modules/libcstring"]
+	path = modules/libcstring
+	url = git@github.com:urbanspr1nter/libcstring.git
