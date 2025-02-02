@@ -51,10 +51,10 @@ static void push(struct TokenCollection* collection, struct Token* token) {
             newTokenText = cstring_create(newTokenText, collection->tokens[i]->value->text);
             newTokens[i] = createToken(newTokenText);
         }
-
         freeTokens(collection->tokens, collection->count);
         safeFree(collection->tokens);
 
+        // Update tokens to point to the new collection
         collection->tokens = newTokens; 
         collection->length = newLength;
     }
@@ -113,6 +113,7 @@ struct TokenCollection* ctok_tokenize(String* data, String* delimeter) {
     }
 
     safeFree(wordBuffer);
+
     return collection;
 }
 
