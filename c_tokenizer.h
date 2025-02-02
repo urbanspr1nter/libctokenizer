@@ -16,5 +16,6 @@ struct TokenCollection {
 
 struct TokenCollection* ctok_tokenize(String* data, String* delimeter);
 void ctok_free(struct TokenCollection* tokens);
+void ctok_printTokens(struct TokenCollection* collection);
 
 #endif 
