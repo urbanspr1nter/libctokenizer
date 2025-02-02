@@ -10,7 +10,11 @@ struct Token {
 
 struct TokenCollection {
     struct Token** tokens;
-
+    uint64_t count;
+    uint64_t length;
 };
+
+struct TokenCollection* ctok_tokenize(String* data, String* delimeter);
+void ctok_free(struct TokenCollection* tokens);
 
 #endif 
