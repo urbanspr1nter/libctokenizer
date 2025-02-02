@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdint.h>
-#include "modules/libcstring/src/c_string.h"
+#include "../modules/libcstring/src/c_string.h"
 #include "c_tokenizer.h"
 
 #define MAX_LINE_SIZE 32768

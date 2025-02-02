@@ -2,7 +2,7 @@
 #define C_TOKENIZER_H
 
 #include <stdint.h>
-#include "modules/libcstring/src/c_string.h"
+#include "../modules/libcstring/src/c_string.h"
 
 struct Token {
     String* value;    
